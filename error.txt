@@ -1,0 +1,3 @@
+1 Uncaught SyntaxError: The requested module '/src/pages/Home.jsx' does not provide an export named 'Home' (at App.jsx:3:9)
+2 IMP-when-ever we do any chngaes in any config file like taiwind.config.js or vite.config.js then we have to restart our server like npm run dev then only it will applied to your project all changes
+3 
