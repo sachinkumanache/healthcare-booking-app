@@ -38,7 +38,6 @@ const Navbar = () => {
               className="w-8 rounded-full "
               src={assets.profile_pic}
               alt=""
-              ght
             />
             <img className="w-2.5" src={assets.dropdown_icon} alt="" />
             <div className="absolute top-0 right-0 pt-14 font-medium text-base text-gray-600 z-20 hidden group-hover:block">
