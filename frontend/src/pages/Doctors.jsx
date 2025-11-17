@@ -9,6 +9,7 @@ const Doctors = () => {
   const [filterDoc, setFilterDoc] = useState([]);
   // console.log(doctors);
   // console.log(filterDoc);
+  const [showFilter, setShowFilter] = useState(false);
   const applyFilter = () => {
     if (speciality) {
       setFilterDoc(doctors.filter((doc) => doc.speciality === speciality));
@@ -25,7 +26,8 @@ const Doctors = () => {
     <div>
       <p>Browse through the doctors speciality</p>
       <div className="flex flex-col md:flex-row gap-5 mt-5">
-        <div className="flex flex-col gap-4 text-greay-600 text-sm">
+        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden  ${showFilter?"bg-primary text-white":""}`} onClick={() => setShowFilter((prev) => !prev)}>Filters</button>
+        <div className={`flex flex-col gap-4 text-greay-600 text-sm ${showFilter?"flex":"hidden sm:flex"}`}>
           <p
             onClick={() => {
               speciality === "General physician"

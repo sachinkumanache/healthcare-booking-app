@@ -10,7 +10,7 @@ const Contact = () => {
         </p>
       </div>
       <div>
-        <div className="flex flex-col md:flex-row justify-around  w-full mt-10">
+        <div className="flex flex-col md:flex-row justify-evenly  w-full mt-10">
           <img className="w-full md:max-w-[360px]" src={assets.contact_image} alt="" />
           <div className="flex flex-col justify-center items-start gap-6 text-sm text-gray-800">
             <p className="font-semibold text-lg text-gray-800"> OUR OFFICE</p>
